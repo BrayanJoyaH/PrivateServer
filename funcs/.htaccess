@@ -1,0 +1,9 @@
+<files conexion.php>
+order allow,deny
+deny from al
+</files>
+
+<files funcs.php>
+order allow,deny
+deny from al
+</files>

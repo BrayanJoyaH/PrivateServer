@@ -1,0 +1,232 @@
+#btnaddFile, #btnnewFolder {
+
+	display: none;
+}
+
+.operations {
+
+	position: fixed;
+	left: 0;
+	top: 47px;
+	padding: 4px 0;
+	display: flex;
+	min-width: 100%;
+	justify-content: flex-end;
+	background-color: #eee5;
+	border-bottom: .1px solid #dde;
+	z-index: 4;
+}
+
+.operations-item {
+
+	margin-right:  24px;
+}
+
+.operations label {
+
+	color: #000;
+}
+
+.operations label:hover {
+
+	cursor: pointer;
+	color: #888;
+}
+
+.inputAddFile, .inputNewFolder {
+
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #222;
+	opacity: .9;
+	z-index: 4;
+}
+
+.inputAddFile form, .inputNewFolder form {
+
+	border-radius: 8px;
+	background-color: #fff;
+	display: block;
+	width: 80%;
+	position: relative;
+	box-shadow: 0.1px 0.1px 8px  #ccc;
+	border: .1px solid #ccc;
+	padding: 12px 12px 28px 12px;
+	text-align: center;
+	z-index: 50;
+}
+
+.inputAddFile form label[for="btnaddFile"], .inputNewFolder form label[for="btnnewFolder"] {
+
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+input[type="file"] {
+
+	display: none;
+}
+
+input[type="file"]:valid + label[for="file"] {
+
+	color: #fff;
+	border-color: #49e;
+	background: #49e
+}
+
+
+
+label[for="file"], input {
+
+	min-width: 50%;
+	border: .2px solid #aaa;
+	border-radius: 5px;
+	margin: 14px;
+	padding: 8px;
+	outline: none;
+}
+
+
+.fa-file, .fa-folder {
+
+	margin-right: 8px;
+}
+
+input:focus {
+
+	border-color: #007bff;
+}
+
+.inputAddFile form input[type="submit"], .inputNewFolder form input[type="submit"] {
+
+	cursor: pointer;
+	padding: 8px 0;
+	min-width: 50%;
+	margin-top: 18px;
+	background-color: #007bff;
+	border-color: #007bff;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.inputAddFile form input[type="submit"]:hover, .inputNewFolder form input[type="submit"]:hover {
+
+	background-color: #005ae0;
+}
+
+#btnaddFile:checked + .operations-item .inputAddFile {
+	
+	display: flex;
+}
+
+#btnnewFolder:checked + .operations-item .inputNewFolder {
+	
+	display: flex;
+}
+
+.files {
+
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	left: 250px;
+	top: 84px;
+	padding: 20px;
+}
+
+.cardfolder, .cardfile {
+
+	background-color: #ddd2;
+	border: 1px solid #8886;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 12px;
+	flex-grow: 1;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+.cardfolder:hover , .cardfile:hover {
+
+	filter: brightness(.8);
+
+}
+
+.cardfolder {
+	background-color: #eee2;
+	border: none;
+}
+
+.cardfolder .link, .cardfile .link {
+
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+
+.cardfolder .name, .cardfile .name {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cardfolder .name span, .cardfile .name span {
+
+	font-size: .9rem;
+}
+
+.cardfolder .name .files-options, .cardfile .name .files-options {
+
+	margin-left: 10px;
+}
+
+.cardfolder .name i, .cardfile .name i {
+
+	color: #000; 
+	margin: 8px;
+}
+
+.cardfolder .name i:hover, .cardfile .name i:hover {
+
+	color: #888;
+}
+
+@media screen and (min-width: 500px) {
+
+	.inputAddFile form, .inputNewFolder form {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.files {
+		left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+
+	.cardfolder .name span, .cardfile .name span {
+
+		font-size: .8rem;
+	}
+}
+
+
+
+
+
+
+
+

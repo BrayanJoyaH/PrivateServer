@@ -1,0 +1,77 @@
+.files {
+	position: absolute;
+	left: 250px;
+	top: 84px;
+	padding: 20px;
+	width: calc(100% - 300px);
+	
+}
+
+.info {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+
+}
+
+.imageUser {
+
+	height: 35vh;
+	width: 35vh;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #aaa2;
+}
+
+.imageUser img {
+
+	height: inherit;
+	object-fit: cover;
+}
+
+.infoUser {
+	margin-top: 32px;
+	width: 100%;
+	text-align: left;
+}
+
+.infoUser p {
+
+	border: 1px solid #49e;
+	border-radius: 12px;
+	padding: 18px;
+	margin: 14px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	text-decoration: none;
+	border-radius: 8px;
+	color: #fff;
+	padding: 12px 34px;
+	background-color: #49e;
+	align-self: flex-end;
+	margin: 30px 0;
+	float: right;
+
+}
+
+.btn:hover {
+
+	background-color: #27c;
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+	.files {
+		left: 10px;
+		width: calc(100% - 60px);
+	}
+
+}

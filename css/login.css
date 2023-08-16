@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "myfont";
+    src: url('../fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf');
+}
+
+
+html {
+	font-size: 16px;
+}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #e9ecef;
+	font-family: Century Gothic, "myfont", "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: 400;
+	padding: 0 20px;
+}
+
+.icons {
+	display: none;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+}
+
+.icon {
+	position: relative;
+	opacity: .15;
+
+}
+
+header {
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	font-size: 1.7rem;
+}
+
+
+strong {
+	background-color: #007bff; 
+	padding: 10px;
+	border-color: #007bff;
+	color: #fff;
+	border-radius: 15px;
+	font-size: 1.8rem;
+	text-transform: capitalize;
+}
+
+.fa-lock {
+	margin-left: 5px;
+}
+
+form {
+	display: block;
+	position: relative;
+	padding: 12px 12px 28px 12px;
+	background-color: #fff;
+	text-align: center;
+	border: .1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0.2px 0.3px 8px 2px #ccc;	
+	z-index: 50;
+}
+
+hr {
+	position: absolute;
+	z-index: 25;
+	width: calc(100% - 350px);
+	bottom: 165px;
+}
+
+.title-login {
+	margin-bottom: 24px;
+	color: #555;
+}
+
+.fa-server, .fa-user-times {
+	margin-right: 12px;
+}
+
+select, input {
+	min-width: 87%;
+	border: .2px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 14px;
+	padding: 8px;
+	outline: none;
+}
+
+select {
+	min-width: 93%;
+}
+
+select, input:focus {
+	border-color: #007bff;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	min-width: 93%;
+	margin-top: 18px;
+	background-color: #007bff;
+	border-color: #007bff;
+	color: #fff;
+	border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+	background-color: #005ae0;
+}
+
+footer {
+	position: absolute;
+	bottom: 18px;
+	right: 18px;
+	font-weight: bolder;
+	color: #49e;
+	cursor: pointer;
+}
+
+footer > a {
+	text-decoration: none;
+	color: #49e;
+}
+
+footer:hover {
+	text-decoration: 3px underline;
+}
+
+@media screen and (min-width:400px) {
+	form {
+		width: 320px;
+	}
+}
+
+@media screen and (min-width:500px) {
+	form {
+		width: 320px;
+	}
+
+	.icons {
+		display: flex;
+	}
+}
+
+
+
+@media screen and (max-width:300px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:270px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width:240px) {
+	html {
+		font-size: 10px;
+	}
+}
+

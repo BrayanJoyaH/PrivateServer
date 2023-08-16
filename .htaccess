@@ -1,0 +1,10 @@
+Options All -Indexes
+ErrorDocument 404 /gestorDeArchivos/document/404.php
+ErrorDocument 403 /gestorDeArchivos/document/403.php
+
+
+
+
+
+
+

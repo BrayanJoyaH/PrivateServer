@@ -1,0 +1,118 @@
+.files {
+	position: absolute;
+	left: 250px;
+	top: 84px;
+	padding: 20px;
+	width: calc(100% - 300px);
+	
+}
+
+.info-container {
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+
+}
+
+.imageUser {
+
+	height: 35vh;
+	width: 35vh;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #aaa2;
+}
+
+.imageUser img {
+
+	height: inherit;
+	object-fit: cover;
+}
+
+form {
+	display: block;
+	position: relative;
+	padding: 12px 12px 28px 12px;
+	background-color: #fff;
+	text-align: center;
+	border: .1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0.2px 0.3px 8px 2px #ccc;	
+	margin-top: 24px;
+	scroll-margin-top: 50px;
+}
+
+input[type="file"] {
+
+	display: none;
+}
+
+input[type="file"]:valid + label[for="file"] {
+
+	color: #fff;
+	border-color: #49e;
+	background: #49e
+}
+
+
+label[for="file"] {
+	cursor: pointer;
+	min-width: 50%;
+	border: .2px solid #aaa;
+	border-radius: 5px;
+	margin: 14px;
+	padding: 8px;
+	outline: none;
+}
+
+
+.title-login {
+	margin-bottom: 24px;
+	color: #555;
+}
+
+.fa-user {
+	margin-right: 12px;
+}
+
+select, input {
+	min-width: 87%;
+	border: .2px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 14px;
+	padding: 8px;
+	outline: none;
+}
+
+select {
+	min-width: 93%;
+}
+
+select, input:focus {
+	border-color: #007bff;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	min-width: 93%;
+	margin-top: 18px;
+	background-color: #007bff;
+	border-color: #007bff;
+	color: #fff;
+	border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+	background-color: #005ae0;
+}
+
+@media screen and (max-width: 700px) {
+
+	.files {
+		left: 10px;
+		width: calc(100% - 60px);
+	}
+
+}

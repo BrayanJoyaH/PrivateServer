@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "myfont";
+    src: url('../fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf');
+}
+
+html {
+
+	font-size: 16px;
+	font-family: Century Gothic, "myfont", "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-weight: 400;
+}
+
+#btnuserImage {
+
+	display: none;
+}
+
+.header {
+
+	display: flex;
+	position: fixed;
+	min-width: 100%;
+	background-color: #007bff;
+	height: 47px;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+}
+
+header {
+
+	position: relative;
+	z-index: 20;
+	text-transform: uppercase;
+	margin-left: 15px;
+	font-size: 1.2rem;
+}
+
+header label {
+
+	cursor: pointer;
+	display: none;
+	margin-right: 8px;
+}
+
+strong {
+
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.fa-lock {
+
+	margin-left: 5px;
+}
+
+.userImage {
+
+	display: flex;
+	align-items: center;
+	background-color: #005aee;
+	height: inherit;
+	padding: 0 12px;
+}
+
+.userImage > label:hover {
+
+	cursor: pointer;
+	color: #555;
+}
+
+.userImage > img {
+
+	margin-left: 12px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.userImage-options {
+
+	padding: 12px;
+	position: absolute;
+	z-index: 35;
+	display: none;
+	background-color: #f3f3f3;
+	top: 47px;
+	right: 1px;
+	box-shadow: .2px .2px 8px #999;
+}
+
+.userImage-options p a {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.userImage-options i {
+
+	margin-left: 10px; 
+}
+
+.userImage-options a {
+
+	text-decoration: none;
+	color: #000;
+}
+
+.userImage-options a:hover {
+
+	text-decoration: 2px underline #49e;
+}
+
+#btnuserImage:checked + section .userImage .userImage-options {
+
+	display: inline-block;
+}
+
+#btnnavbar {
+
+	display: none;
+}
+
+.navbar {
+
+	font-family: sans-serif;
+	float: left;
+	position: fixed;
+	display: inline-block;
+	background-color: #fff;
+	border-right: .1px solid #bbbb;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 240px;
+	overflow: auto;
+	box-shadow: 10px 20px 20px #ddd7;
+	z-index: 2;
+	
+}
+
+.navbar nav {
+
+	margin-top: 120px;
+}
+
+.navbar nav ul   {
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar nav ul i {
+
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.navbar nav ul li a {
+
+	margin: 4px 14px;
+	padding: 10px 10px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar nav ul li a:hover {
+	
+	background-color: #8884;
+	border-radius: 8px;
+}
+
+.navbar nav ul .settings {
+
+	margin-top: 50px;
+}
+
+.navActive {
+
+	background-color: #27e6;
+	border-radius: 8px;
+}
+
+footer {
+
+	position: fixed;
+	bottom: 18px;
+	right: 18px;
+	font-weight: bolder;
+	color: #49e;
+	cursor: pointer;
+}
+
+footer > a {
+	
+	text-decoration: none;
+	color: #49e;
+}
+
+footer:hover {
+
+	text-decoration: 3px underline;
+}
+
+@media screen and (max-width: 700px) {
+
+	header {
+
+		font-size: 1rem;
+	}
+
+	header label {
+
+		display: inline;
+	}
+
+	.navbar {
+		display: none;
+		visibility: hidden;
+	}
+
+	#btnnavbar:checked + .navbar {
+
+		display: inline-block;
+		visibility: visible;
+	} 
+
+
+@media screen and (max-width: 360px) {
+
+	header > span {
+		display: none;
+	}
+
+	header {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 300px) {
+
+	header > span {
+		display: none;
+	}
+
+	.userImage-options {
+
+		font-size: .8rem;
+	}
+
+
+}
+
+
+
+
+
+
+

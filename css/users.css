@@ -1,0 +1,52 @@
+.files {
+	position: absolute;
+	left: 250px;
+	top: 84px;
+	padding: 20px;
+	width: calc(100% - 300px);
+}
+
+.UserInfo {
+	border: 1px solid #49e;
+	border-radius: 12px;
+	padding: 18px;
+	margin: 14px 0;
+} 
+
+.UserInfo details summary span {
+
+	margin-left: 8px;
+}
+
+
+.UserInfo details summary a{
+
+	margin-left: 8px;
+
+}
+
+.UserInfo details summary a i{
+
+
+	color: #000;
+
+}
+
+.UserInfo details summary a i:hover{
+
+	color: #888;
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+	.files {
+		left: 10px;
+		width: calc(100% - 60px);
+	}
+
+}
+
