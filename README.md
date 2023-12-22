@@ -44,4 +44,6 @@ El mismo prototipo de código se ha usado para desarrollar dos sistemas, que sol
 
 13. **Edita la funcion SendMail**: Ve a la ruta ./funcs/funcs.php y busca la funcion SendMail (131-200) y edita las líneas 144, 145, 157.
 
+14. **Clave de sendMail** Puesto que ahora la clave o password requiere de una contraseña de aplicación, revisa como obtenerla: https://youtu.be/Q74nxFBCHCI?si=3-m1i8Hnitzp7hZ6, y con ella modifica el la línea 145 de ./funcs/funcs.php, escribela toda junta, sin espacios.
+
 ¡Eso es todo! Ahora estás listo/a para trabajar con XAMPP y tu base de datos. Si tienes alguna pregunta o necesitas más ayuda, no dudes en consultar la documentación oficial de XAMPP o buscar recursos adicionales en línea, o consultarme a mi personalmente por algun medio. ¡Buena suerte en tus proyectos!
