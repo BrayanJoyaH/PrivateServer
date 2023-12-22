@@ -2,7 +2,7 @@
 
 
 	/*	 Urls 	*/
-	define('SERVERURL', 'http://localhost/gestorDeArchivos/');
+	define('SERVERURL', 'http://localhost/PrivateServer/');
 	define('MYWEB', 'https://brayanjoya.github.io/home/');
 	/*	 App Theme color 	*/
 	define('THEMECOLOR', '#49e');
